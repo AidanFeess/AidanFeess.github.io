@@ -33,9 +33,11 @@
     ------------------------
 */
 
+@use 'sass:color';
+
 // Define base and accent colors
 $base-color: #3498db;
-$base-color-hover: darken($base-color, 10%);
+$base-color-hover: color.adjust($base-color, $lightness: -10%);
 
 // Define background colors
 $background: #fff;
@@ -258,7 +260,7 @@ footer {
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        border: 3px solid lighten($text, 25%);
+        border: 3px solid color.adjust($text, $lightness: 25%);
         text-align:center;
     }
 
@@ -378,7 +380,7 @@ footer {
     }
 
     h2 {
-        color: lighten($base-color, 25%);
+        color: color.adjust($base-color, $lightness: 25%);
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
@@ -414,7 +416,7 @@ footer {
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        border: 3px solid lighten($base-color, 25%);
+        border: 3px solid color.adjust($base-color, $lightness: 25%);
         text-align:center;
     }
 
@@ -714,8 +716,7 @@ footer {
         display: inline-block;
         margin: 7px;
         padding: 5px 10px;
-        color: $heading;
-        background: darken($background-alt, 5%);
+        color: color.adjust($heading, $lightness: -5%);
         list-style: none;
         cursor: default;
         font-size: 1.2em;
@@ -751,8 +752,7 @@ footer {
         border-radius: 4px;
         border: none;
         margin-bottom: 10px;
-        background: darken($base-color, 15%);
-        color: #fff;
+        color: color.adjust($base-color, $lightness: -15%);
         @include transition();
         @include placeholder {
             color: #fff;
@@ -760,7 +760,7 @@ footer {
 
         &:focus {
             outline: none;
-            background: darken($base-color, 25%);
+            color: color.adjust($base-color, $lightness: -25%);
         }
     }
 

@@ -604,8 +604,7 @@ footer {
   display: inline-block;
   margin: 7px;
   padding: 5px 10px;
-  color: #374054;
-  background: rgb(227.5869565217, 227.5869565217, 233.9130434783);
+  color: rgb(44.9100719424, 52.2589928058, 68.5899280576);
   list-style: none;
   cursor: default;
   font-size: 1.2em;
@@ -638,8 +637,7 @@ footer {
   border-radius: 4px;
   border: none;
   margin-bottom: 10px;
-  background: rgb(29.2970711297, 110.6778242678, 165.2029288703);
-  color: #fff;
+  color: rgb(29.2970711297, 110.6778242678, 165.2029288703);
   transition: 0.5s ease all;
 }
 #contact-form input::-webkit-input-placeholder, #contact-form textarea::-webkit-input-placeholder {
@@ -658,7 +656,7 @@ footer {
 }
 #contact-form input:focus, #contact-form textarea:focus {
   outline: none;
-  background: rgb(21.6150627615, 81.6569037657, 121.8849372385);
+  color: rgb(21.6150627615, 81.6569037657, 121.8849372385);
 }
 #contact-form textarea {
   height: 150px;
